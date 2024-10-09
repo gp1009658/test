@@ -1,0 +1,13 @@
+---
+- name: "test"
+  hosts: all
+  gather_facts: no
+  vars:
+    ansible_connection: network_cli
+    ansible_network_os: community.network.ce
+  tasks:
+  - name: "test"
+    community.network.ce_command:
+      commands:
+      - "screen-length disable"
+      - "display version"
