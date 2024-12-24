@@ -9,5 +9,5 @@
   - name: "test"
     community.network.ce_command:
       commands:
-      - "screen-length disable"
+      - "display version"
       - "display clock"
